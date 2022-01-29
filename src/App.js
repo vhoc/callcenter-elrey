@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import 'animate.css'
+import Header from './components/Header/Header';
+import { Container } from 'react-bootstrap';
+import IntroText from './components/IntroText/IntroText';
+import headerBackground from './assets/img/header-bg.webp';
+import 'animate.css'
+import FastPickUpVideo from './components/FastPickUpVideo/FastPickUpVideo';
+import ImageSlider from './components/ImageSlider/ImageSlider';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Header backgroundImage={ headerBackground }/>
+
+      <Container className="d-flex flex-column p-5 gap-4" >
+
+        <IntroText />
+
+        <FastPickUpVideo />
+
+        <ImageSlider imagePath='assets/img/slider/' />
+
+      </Container>
+      
+      
+
     </div>
   );
 }
