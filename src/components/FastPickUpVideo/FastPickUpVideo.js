@@ -12,7 +12,7 @@ const FastPickUpVideo = () => {
             <h3>Te llevamos tu pedido a tu auto</h3>
 
             <div className="mt-3" width="100%" >
-                <ReactPlayer url='https://callcenter.mariscoselrey.com.mx/assets/video/FastPickUp_h264.mp4' />
+                <ReactPlayer muted={true} playing url={['https://callcenter.mariscoselrey.com.mx/assets/video/FastPickUp_h264.mp4']} width='100%' height='100%'/>
             </div>
 
         </div>
