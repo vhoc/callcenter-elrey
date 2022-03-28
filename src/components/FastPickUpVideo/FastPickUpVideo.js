@@ -1,8 +1,7 @@
 import './FastPickUpVideo.css'
-import poster from '../../assets/img/poster-video.jpg'
-import video from '../../assets/video/FastPickUp_h264.mp4'
+import ReactPlayer from 'react-player'
 
-const FastPickUpVideo = ({ url }) => {
+const FastPickUpVideo = () => {
 
     return (
 
@@ -12,9 +11,9 @@ const FastPickUpVideo = ({ url }) => {
 
             <h3>Te llevamos tu pedido a tu auto</h3>
 
-            <video className="mt-3" width="100%" controls="" name="media" poster={ poster }>
-                <source src={ video } type="video/mp4"/>
-            </video>
+            <div className="mt-3" width="100%" >
+                <ReactPlayer url='https://callcenter.mariscoselrey.com.mx/assets/video/FastPickUp_h264.mp4' />
+            </div>
 
         </div>
 

@@ -10,15 +10,31 @@ const ImageSlider = ({ imagePath = '' }) => {
         },
         {
             imgsrc: '1.jpg',
-            description: ''
+            description: 'Seguimos todas las medidas de seguridad e higiene'
         },
         {
             imgsrc: '2.jpg',
-            description: '',
+            description: 'Tu pedido hasta tu auto',
         },
         {
             imgsrc: '3.jpg',
             description: 'Siempre listos para atenderte.'
+        },
+        {
+            imgsrc: '4.jpg',
+            description: 'Siempre listos para atenderte.'
+        },
+        {
+            imgsrc: '5.jpg',
+            description: 'Siempre listos para atenderte.'
+        },
+        {
+            imgsrc: '6.jpg',
+            description: 'Siempre listos para atenderte.'
+        },
+        {
+            imgsrc: '7.jpg',
+            description: '#FastPickUp'
         }
     ]
 
